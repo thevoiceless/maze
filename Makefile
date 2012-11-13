@@ -1,16 +1,12 @@
 OPT = -O2
 
-CPPS = maze.cpp IOstuff.cpp
-OBJS = maze.o IOstuff.o
+CPPS = maze.cpp IOstuff.cpp Line.cpp
 EXES = maze
 
 all: maze
 
-maze: objects $(OBJS)
+maze: $(CPPS)
 	g++ $(CPPS) -o maze $(OPT)
 
-objects: $(CPPS)
-	g++ -c $(CPPS) $(OPT)
-
 clean:
-	rm $(EXES) $(OBJS)
+	rm $(EXES)

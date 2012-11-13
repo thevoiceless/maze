@@ -9,4 +9,4 @@
 
 using namespace std;
 
-void readInputFile(string& filename, vector<Line>& lines);
+void readInputFile(string& filename, vector<Line>& lines, int& numVillages, int& numLines);

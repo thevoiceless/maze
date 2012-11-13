@@ -9,6 +9,7 @@ using namespace std;
 
 string filename = "";
 vector<Line> lines;
+int numVillages, numLines;
 
 int main(int argc, char* argv[])
 {
@@ -21,7 +22,7 @@ int main(int argc, char* argv[])
 		filename = argv[1];
 	}
 
-	readInputFile(filename, lines);
+	readInputFile(filename, lines, numVillages, numLines);
 
 	return 0;
 }
