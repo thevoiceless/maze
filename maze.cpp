@@ -3,12 +3,25 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Line.h"
+#include "IOstuff.h"
 
 using namespace std;
 
-int main()
+string filename = "";
+vector<Line> lines;
+
+int main(int argc, char* argv[])
 {
-	cout << "Hello world" << endl;
+	if (argc != 2)
+	{
+		filename = "input.txt";
+	}
+	else
+	{
+		filename = argv[1];
+	}
+
+	readInputFile(filename, lines);
+
 	return 0;
 }

@@ -1,7 +1,7 @@
 OPT = -O2
 
-CPPS = maze.cpp
-OBJS = maze.o
+CPPS = maze.cpp IOstuff.cpp
+OBJS = maze.o IOstuff.o
 EXES = maze
 
 all: maze

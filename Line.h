@@ -5,15 +5,16 @@ class Line
 private:
 	int color;
 	int type;
+	char point1, point2;
 
 public:
-	static const int COLOR_RED = 1;
-	static const int COLOR_GREEN = 2;
-	static const int COLOR_BLUE = 3;
-	static const int TYPE_HORSE = 4;
-	static const int TYPE_CAR = 5;
-	static const int TYPE_TROLLEY = 6;
-	static const int TYPE_BUS = 7;
+	static const char COLOR_RED = 'R';
+	static const char COLOR_GREEN = 'G';
+	static const char COLOR_BLUE = 'B';
+	static const char TYPE_HORSE = 'H';
+	static const char TYPE_CAR = 'C';
+	static const char TYPE_TROLLEY = 'T';
+	static const char TYPE_BUS = 'B';
 
-	Line(int _color, int _type) : color(_color), type(_type) {}
+	Line(char _point1, char _point2, int _color, int _type) : point1(_point1), point2(_point2), color(_color), type(_type) {}
 };
